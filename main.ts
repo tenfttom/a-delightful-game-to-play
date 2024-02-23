@@ -30,6 +30,9 @@ let mySprite = sprites.create(img`
     .........cc55555555c...........
     ..........cccccccccc...........
     `, SpriteKind.Player)
+mySprite.setStayInScreen(true)
+mySprite.setBounceOnWall(true)
+mySprite.setVelocity(80, 50)
 controller.player1.moveSprite(mySprite)
 scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
